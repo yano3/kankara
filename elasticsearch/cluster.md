@@ -39,10 +39,15 @@
 - シャードを保管するノード
 - データにまつわる操作 (CRUD, search, etc...) を扱う
 
-### Client node
+### Ingest node
 
-- Master eligible node でも data node でもないノード
-- 各種リクエストを受けるだけのロードバランサー的な何か
+- インデックス前にドキュメントを変換する機能 (Ingest) に使われるノード
+
+### Coordinating only node
+
+- Master eligible node でも Data node でも Ingest Node でもないノード
+- 各種リクエストを受け、データを持った Data node へ転送する
+- 全てのノードは暗黙的に Coordinating only node である
 
 ### (Tribe node)
 
