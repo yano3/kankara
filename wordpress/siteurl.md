@@ -1,4 +1,4 @@
-# WordPress Address and site Address
+# WordPress Address and Site Address
 
 設定画面の「WordPress アドレス」「サイトアドレス」と `wp-config.php` に書く定数名、 DB の `wp_options` テーブルの `option_name` の関係。
 
