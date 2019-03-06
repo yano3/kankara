@@ -4,6 +4,7 @@
 
 
 | 日本語 UI      | WordPress アドレス | サイトアドレス |
+|----------------|--------------------|----------------|
 | English UI     | WordPress Address  | Site Address   |
 | wp-config.php  | WP\_SITEURL        | WP\_HOME |
 | option\_name   | siteurl            | home     |
