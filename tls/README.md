@@ -8,3 +8,8 @@
     - [versioned](https://statics.tls.security.mozilla.org/server-side-tls-conf-4.0.json)
     - [latest](https://statics.tls.security.mozilla.org/server-side-tls-conf.json)
 
+### Nginx documents
+
+- [Module ngx\_http\_ssl\_module](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache)
+- [Configuring HTTPS servers](http://nginx.org/en/docs/http/configuring_https_servers.html)
+
