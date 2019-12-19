@@ -1,6 +1,6 @@
 <?php
 
-setcookie("app1_hoge", "app1_value_hoge");
+setcookie("app1_hoge", "app1_value_hoge", time()+60*60*24*30);
 setcookie("app1_fuga", "app1_value_fuga");
 
 print '<h1>app1</h1>';
