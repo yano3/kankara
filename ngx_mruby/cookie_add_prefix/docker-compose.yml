@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  proxy:
+    image: yano3/nginx-ngx_mruby:latest
+    volumes:
+      - ./proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
+    ports:
+      - '10080:80'
+  app:
+    image: php:apache
+    volumes:
+      - ./app:/var/www/html
