@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  proxy:
+    image: yano3/nginx-ngx_mruby:latest
+    volumes:
+      - ./proxy/proxy.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - '10081:80'
+  app:
+    image: php:fpm-buster
+    volumes:
+      - ./app:/var/www/html
