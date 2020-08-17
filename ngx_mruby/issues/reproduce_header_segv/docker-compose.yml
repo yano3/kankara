@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  proxy:
+    image: yano3/nginx-ngx_mruby:1.18.0-ngx_mruby2.2.3
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - '10080:80'
