@@ -2,6 +2,11 @@
 
 - https://github.com/GoogleContainerTools/distroless
 
+## image name
+
+- `gcr.io/distroless/static-debian10` のようにディストリビューション名の suffix を含む名前で指定することが [推奨](https://github.com/GoogleContainerTools/distroless#base-operating-system) されている。
+- `gcr.io/distroless/static` のような省略した指定もできるが Debian の次のリリース時にビルドを壊す可能性がある。
+
 ## static vs. base
 
 - `static-debian10` や `base-debian10` のように prefix が `base` のイメージと `static` のイメージがある。
